@@ -4,7 +4,7 @@ let fetchConfig = {
 
 var div = document.querySelectorAll("ol")[0]
 var id = 0   
-for ( i = 1; i < 19; i++){
+for ( i = 1; i < 152; i++){
     var urlApi = 'https://pokeapi.co/api/v2/pokemon/' + String(i)
     fetch(urlApi,fetchConfig)
             .then(resposta => resposta.json()).then((data) => {
