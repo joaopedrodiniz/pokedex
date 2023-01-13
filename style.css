@@ -197,3 +197,17 @@ li:hover{
 .card_ghost {
 	background: #7B61A2;
 }
+
+/* scrollbar */
+.pokedex::-webkit-scrollbar {
+	width: 15px;              
+  }
+.pokedex::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.327);        
+  }
+  
+.pokedex::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);  
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 20px;      
+}
