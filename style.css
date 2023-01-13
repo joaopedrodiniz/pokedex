@@ -13,3 +13,48 @@ body {
 	overflow: hidden;
 	height: 100vh;
 }
+
+/* Header */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 6vh;
+	margin: 10px;
+}
+
+.headerSectionTitle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10vw;
+}
+.headerSectionTitle > h1 {
+	text-align: center;
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+}
+
+.headerSectionTitle > img {
+	height: 40px;
+	width: 45px;
+}
+
+.headerSectionSearch {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	margin-right: 10vw;
+}
+
+input {
+	border: transparent;
+	border-left: 1px solid black;
+	outline: 0px;
+}
