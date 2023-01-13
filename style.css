@@ -133,3 +133,67 @@ li:hover{
 	font-size: 22px;
 	font-weight: bold;
 }
+
+/* cards  */
+.card_fire {
+	background: #FD7D24;
+}
+
+.card_grass {
+	background: #9BCC50;
+}
+
+.card_electric {
+	background:#EED535;
+}
+
+.card_water {
+	background: #4592C4;
+}
+
+.card_ground {
+	background: linear-gradient(to top, #F7DE3F, #AB9842);
+}
+
+.card_rock {
+	background: #A38C21;
+}
+
+.card_fairy {
+	background: #FDB9E9;
+}
+
+.card_poison {
+	background: #B97FC9;
+}
+
+.card_bug {
+	background:#719F3F;
+}
+
+.card_dragon {
+	background: linear-gradient(to top, rgb(44, 154, 232), rgb(255, 56, 56));
+}
+
+.card_psychic {
+	background: #F366B9;
+}
+
+.card_flying {
+	background: linear-gradient(to top, rgb(137, 137, 137), rgb(50, 90, 223));
+}
+
+.card_fighting {
+	background: #D56723;
+}
+
+.card_normal {
+	background: #A4ACAF;
+}
+.card_ice {
+	background: #51C4E7;
+}
+
+.card_ghost {
+	background: #7B61A2;
+}
