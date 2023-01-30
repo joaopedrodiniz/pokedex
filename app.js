@@ -8,7 +8,7 @@ const allPokemons = 152
 
 
 async function getPokemons(){ 
-    for ( i = 1; i < 9; i++){
+    for ( i = 1; i < allPokemons; i++){
         var urlApi = 'https://pokeapi.co/api/v2/pokemon/' + String(i)
         await fetch(urlApi,fetchConfig)
                 .then(resposta => resposta.json()).then((data) => {
