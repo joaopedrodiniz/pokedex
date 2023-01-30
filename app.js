@@ -12,7 +12,6 @@ async function getPokemons(){
         var urlApi = 'https://pokeapi.co/api/v2/pokemon/' + String(i)
         await fetch(urlApi,fetchConfig)
                 .then(resposta => resposta.json()).then((data) => {
-                    console.log(data)
                     let pokemons = data.results
                     createBox(data,id+=1);
                 })
