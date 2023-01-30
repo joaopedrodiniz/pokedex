@@ -128,6 +128,23 @@ function viewPoke(id){
                 contador++;
             }
         }
+        function createTypeView(){
+            let totalType = element.types.map(typeInfo => typeInfo.type.name).length
+            for(let i = 0; i < totalType; i++){
+                let boxType = document.querySelector('.boxTypes')
+                let type = document.createElement('p')
+
+                type.className = `card_${element.types.map(typeInfo => typeInfo.type.name)[i]} `
+                type.innerText = `${element.types.map(typeInfo => typeInfo.type.name)[i]}`
+
+                boxType.appendChild(type)
+            }
+            
+            
+        }
+
+        createTypeView();
+        createBarStats();
     }
     
     createView();
