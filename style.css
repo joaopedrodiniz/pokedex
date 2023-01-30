@@ -38,8 +38,10 @@ header {
 }
 
 .headerSectionTitle > img {
+	margin-top: 0.5rem;
 	height: 40px;
-	width: 45px;
+	width: 40px;
+	filter: invert(100%);
 }
 
 .headerSectionSearch {
@@ -91,7 +93,7 @@ input {
 	position: relative;
 }
 
-li:hover{
+.pokedex > li:hover{
     transform: scale(1.1);
     transition: 0.10s;
 }
@@ -197,6 +199,7 @@ li:hover{
 .card_ghost {
 	background: #7B61A2;
 }
+
 
 /* scrollbar */
 .pokedex::-webkit-scrollbar {
