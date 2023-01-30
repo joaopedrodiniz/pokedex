@@ -9,3 +9,171 @@
 	color: white;
 	z-index: 1;
 }
+.contentView {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.viewLeft  {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1.5rem; 
+
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.infoPoke {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+}
+.infoPoke > h1 {
+    margin-bottom: 0.625rem;
+}
+
+.infoPoke > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.infoPoke > div > p {
+    font-weight: bold;
+}
+
+.infoPoke > div > .infoHeight , .infoWeight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #6b6b6b;
+    font-weight: bold;
+}
+
+.stats {
+    padding: 0px;
+}
+
+.stats > h1 {
+    margin-bottom: 0.625rem;
+}
+
+.stats > li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+
+    list-style: none;
+}
+
+.stats .contentBaseStat {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b6b6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.stats > i {
+    display: inline;
+    font-size: 0.625rem;
+}
+
+.stats > li > div > p {
+    font-weight: bold;
+    line-height: 1.6rem;
+    display: inline;
+}
+.stats > li > span {
+    width: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+.viewCircle {
+    width: 100%;
+	height: 100%;
+    background-image: url('./assets/pokeball-icon.png');
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    filter: invert(100%);
+    opacity: 20%;
+	color: white;
+    position:relative; 
+    bottom: 50px;
+    top:0px; 
+    left:0px;
+}
+
+.buttonExit {
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: transparent;
+    font-weight: bold;
+    bottom: 93%;
+    left: 92%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.barStats {
+    min-width: 50%;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.133);
+    border-radius: 10px;
+}
+.levelBarra{
+    border-radius: 100px;
+    height: 0.5rem;
+} 
+
+.boxTypes{
+    margin-top: 0.625rem;
+    display:  flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.boxTypes > p {
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 25%;
+}
+
+.viewRight {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    right: 2rem;
+    border-radius: 10px;
+}
+
+.viewRight > img {
+    display: flex;
+    align-items: center;
+
+    left: 10%;
+    position: absolute;
+    top: 0px; 
+    max-width: 100%;
+    max-height: 100%;
+}
