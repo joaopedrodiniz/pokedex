@@ -44,6 +44,72 @@ function viewPoke(id){
     function createView(element){
         divView = document.querySelector('.viewPoke')
         divView.style.display = 'flex'
+        divView.innerHTML += 
+        `
+        <div class='contentView'> 
+            <button class='buttonExit' onclick ='exit(this)'>X</button>
+            <div class='viewLeft'>
+                <div class='infoPoke'>
+                    <h1>${element.name[0].toUpperCase() + element.name.substring(1)}</h1>
+                    <div> 
+                        <p class='infoWeight'><i class="fa-solid fa-weight-hanging"></i> Weight</p>
+                        <p><span>${element.weight / 10}</span> kg</p>
+                    </div>
+                    <div> 
+                        <p class='infoHeight'><i class="fa-solid fa-ruler"></i> Height</p>
+                        <p><span>${element.height * 10}</span> cm</p>
+                    </div>
+                </div>
+
+                <ul class="stats">
+                    <h1>Stats</h1>
+                    <li id='hp'>
+                        <div class="contentBaseStat">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>${element.stats[0].stat.name}</p>
+                        </div>
+                            <span>${element.stats[0].base_stat}</span>
+                    </li>
+
+                    <li id='attack'>
+                        <div class="contentBaseStat">
+                            <i class="fa-solid fa-burst"></i>
+                            <p>${element.stats[1].stat.name}</p>
+                        </div>
+                        <span>${element.stats[1].base_stat}</span>
+                    </li>
+
+                    <li id='defense'>
+                        <div class="contentBaseStat">
+                            <i class="fa-solid fa-shield"></i>
+                            <p>${element.stats[2].stat.name}</p>
+                        </div>
+                        <span>${element.stats[2].base_stat}</span>
+                    </li>
+
+
+                    <li id='speed'>
+                        <div class="contentBaseStat">
+                            <i class="fa-solid fa-bolt"></i>
+                            <p>${element.stats[5].stat.name}</p>
+                        </div>
+                        <span>${element.stats[5].base_stat}</span>
+                    </li>
+                </ul>
+                <div class="contentType">
+                    <h1>Type</h1>
+                    <div class="boxTypes">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class='viewRight card_${element.types.map(typeInfo => typeInfo.type.name)[0]}'>
+                <div class="viewCircle"> </div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${element.id}.png" alt="foto do pokemon ${element.name}" >
+            </div>
+        </div>
+        `
     }
     
     createView();
