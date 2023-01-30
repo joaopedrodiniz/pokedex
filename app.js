@@ -150,6 +150,12 @@ function viewPoke(id){
     createView();
 }
 
+function exit(elemento){
+    let divViewRemove = elemento.parentNode.parentNode;
+    divViewRemove.innerHTML = ''
+    divViewRemove.style.display = 'none'
+}
+
 
 function search_pokemon() {
     let input = document.getElementById('searchbar').value
