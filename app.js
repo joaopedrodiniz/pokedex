@@ -30,7 +30,7 @@ function createBox(element,x){
             <p class="pokemonName">${element.name}</p>
             <p class="pokemonType">${element.types.map(typeInfo => typeInfo.type.name).join(' | ')} </p>
         </li>`
-}
+ }
 
 function viewPoke(id){
     async function req(){
@@ -150,12 +150,13 @@ function viewPoke(id){
     createView();
 }
 
+    
 function exit(elemento){
     let divViewRemove = elemento.parentNode.parentNode;
     divViewRemove.innerHTML = ''
     divViewRemove.style.display = 'none'
 }
-
+ 
 
 function search_pokemon() {
     let input = document.getElementById('searchbar').value
