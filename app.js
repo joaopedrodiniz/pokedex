@@ -30,7 +30,25 @@ function createBox(element,x){
             <p class="pokemonName">${element.name}</p>
             <p class="pokemonType">${element.types.map(typeInfo => typeInfo.type.name).join(' | ')} </p>
         </li>`
- }
+}
+
+function viewPoke(id){
+    async function req(){
+        var urlApi = 'https://pokeapi.co/api/v2/pokemon/' + id
+         await  fetch(urlApi,fetchConfig)
+                .then(resposta => resposta.json()).then((data) => {
+                    createView(data);
+                })
+            }
+    req();
+    function createView(element){
+        divView = document.querySelector('.viewPoke')
+        divView.style.display = 'flex'
+    }
+    
+    createView();
+}
+
 
 function search_pokemon() {
     let input = document.getElementById('searchbar').value
