@@ -110,6 +110,24 @@ function viewPoke(id){
             </div>
         </div>
         `
+        function createBarStats(){
+            var arr = [0,1,2,3,4,5]
+            let arx = ['hp','attack','defense','speed']
+            var contador = 0
+            for (let j of arx){
+                let elementStats = arr[contador]
+                let li = document.getElementById(`${j}`)
+                let a = document.createElement('div')
+
+                a.className = 'barStats'
+                a.innerHTML += 
+                `<div>
+                    <div class="levelBarra card_${element.types.map(typeInfo => typeInfo.type.name)[0]}" id='a' style="width:${element.stats[elementStats].base_stat}px;}"></div>
+                </div>`
+                li.appendChild(a)
+                contador++;
+            }
+        }
     }
     
     createView();
