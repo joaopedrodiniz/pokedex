@@ -167,7 +167,7 @@
 }
 
 .viewRight > img {
-    left: auto;
+    left: 10%;
     position: relative;
     bottom: 100%;
     max-width: 100%;
