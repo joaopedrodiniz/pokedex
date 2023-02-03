@@ -167,7 +167,7 @@
 }
 
 .viewRight > img {
-    left: 10%;
+    left: auto;
     position: relative;
     bottom: 100%;
     max-width: 100%;
@@ -184,7 +184,7 @@
     .stats li {
         gap: 1rem;
     }
-    
+
     .viewRight{
         width: 100%;
         height: 70%;
