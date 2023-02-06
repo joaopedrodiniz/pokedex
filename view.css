@@ -191,7 +191,6 @@
         z-index: 1;
         overflow: scroll;
         padding: 10px 20px;
-        /* margin-bottom: 20vw; */
     }
     .stats li {
         gap: 1rem;
@@ -206,6 +205,7 @@
         left: 0%;
     }
     .buttonExit{
-        bottom: 94%;
+        bottom: 92%;
+        left: 90%;
     }
 } 
