@@ -174,7 +174,7 @@
     max-height: 100%;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 980px){
     .contentView {
         flex-direction: column-reverse;
     }
@@ -198,4 +198,4 @@
         bottom: 95%;
         padding-left: 10px 13px;
     }
-}
+} 
