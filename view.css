@@ -1,6 +1,5 @@
 .viewPoke {
 	display: none;
-	position: absolute;
     justify-content: center;
     align-items: center;
 	width: 100%;
@@ -102,12 +101,11 @@
     font-weight: bold;
 }
 
-
 .viewCircle {
     width: 100%;
 	height: 100%;
     background-image: url('./assets/pokeball-icon.png');
-    background-size: 40rem;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
     filter: invert(100%);
@@ -154,52 +152,60 @@
 }
 
 .boxTypes > p {
-    padding: 1rem;
+    padding: 1rem;  
     border-radius: 10px;
     min-width: 25%;
 }
 
 .viewRight {
-    position: relative;
     width: 50%;
     height: 100%;
+    position: relative;
     right: 2rem;
     border-radius: 10px;
 }
 
 .viewRight > img {
-    display: flex;
-    align-items: center;
-
     left: 10%;
-    position: absolute;
-    top: 0px; 
+    position: relative;
+    bottom: 100%;
     max-width: 100%;
     max-height: 100%;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
+    .viewPoke {
+        bottom: inherit;
+    }
     .contentView {
         flex-direction: column-reverse;
+        width: 100%;
+        height: 100%; 
+        bottom: 10px;
     }
     .viewLeft{
         width: 100%;
+        padding: 30px;
+        height: 100%;
+        bottom: 2rem;
+        z-index: 1;
+        overflow: scroll;
+        padding: 10px 20px;
+        /* margin-bottom: 20vw; */
     }
     .stats li {
         gap: 1rem;
     }
-
     .viewRight{
         width: 100%;
-        height: 70%;
+        height: 100%;
         right: 0px;
-        top: 1rem;
+        top: 1rem; 
     }
     .viewRight img {
-        left: 20%;
+        left: 0%;
     }
     .buttonExit{
-        bottom: 95%;
-        padding-left: 10px 13px;
+        bottom: 94%;
     }
-}
+} 
